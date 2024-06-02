@@ -19,7 +19,7 @@ P{
 }
 .Navbar
 {
-    width: 100%;
+    width: 100vw;
     padding: 10px;
     display: flex;
     align-items: center;
