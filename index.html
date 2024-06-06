@@ -20,19 +20,45 @@
             <nav class="Navbar">
                 <div class="container Navbar-div">
                     <div class="Navbar-brand">
-                        <img src="full-logo.png" width="180px"  class="logo1" alt="">
-                        <img src="logo comply.png" height="50px" class="logo2" alt="">
+                        <img src="logo-full.png" width="180px"  class="logo1" alt="">
+                        <img src="logo-full.png" height="40px" class="logo2" alt="">
                     </div>
                     <ul class="nav-links navbar-link ms-auto">
                         <li><a href="#home" class="active">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#services" class="service-pop-up-link">Services</a></li>
+                        <li><a href="#team" class="team-pop-up-link">Our Team</a></li>
                         <li><a href="#content">Contact</a></li>
                     </ul>
-                    <button class="btn nav-btn text-light fw-bold"
-                        style="background-color: #183883;margin:-4px 0px  0 20px;">Log In</button>
-                    <button class="btn nav-btn text-light fw-bold"
-                        style="background-color: #183883;margin:-4px 0px  0 20px;">Sign Up</button>
+                    <div class="register-div" style="margin-left: 20px; margin-top: -5px;">
+                      <div class="nav-item dropdown">
+                        <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a> -->
+                        <button class="btn nav-btn dropdown-toggle signup-button" data-bs-toggle="dropdown" aria-expanded="false">Sign Up</button>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">User signup</a></li>
+                          <li><a class="dropdown-item" href="#">client signup</a></li>
+                          <!-- <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                      </div>
+                      <div class="nav-item dropdown">
+                        <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a> -->
+                        <button class="btn nav-btn dropdown-toggle login-button" data-bs-toggle="dropdown" aria-expanded="false">Log In</button>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">User Login</a></li>
+                          <li><a class="dropdown-item" href="#">client Login</a></li>
+                          <li><a class="dropdown-item" href="#">Super Admin Login</a></li>
+                          <!-- <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                      </div>
+                      
+                      <!-- <button class="btn nav-btn">Log In <i class="fa-solid fa-angle-down"></i></button> -->
+                    </div>
+                    
                     <div class="side-icons">
                         <div id="first-icon"
                             style="height:2px; width: 30px; background-color: black; margin: 10px; transition: 0.4s;"></div>
@@ -220,6 +246,62 @@
   </div>
 </section>
 
+<div class="service-pop-up">
+  <section id="services" style="padding-top: 0;" class="eighth-section third-section flex ani8">
+    <img class="service-close" src="./assets/close.png" alt="" />
+    <h2 class="services-heading" style="padding: 10px; margin: 0px;">Our Services</h2>
+    <div class="eighth-lists">
+        <div class="first">
+            <div class="content">
+                <ul>
+                    <li><img src="./assets/check.png" alt="">CONTRACTUAL
+                      STAFFING</li>
+                    <li><img src="./assets/check.png" alt="">MANPOWER
+                      OUTSORCING</li>
+                    <li><img src="./assets/check.png" alt="">MIGRANT
+                      MANPOWER</li>
+                    <li><img src="./assets/check.png" alt="">NAPS
+                      MANPOWER</li>
+                    <li><img src="./assets/check.png" alt="">UNSKILED
+                      MANPOWER</li>
+                </ul>
+            </div>
+        </div>
+        <div class="first">
+            <div class="content">
+                <ul>
+                    <li><img src="./assets/check.png" alt="">ADHOC
+                      MANPOWER</li>
+                    <li><img src="./assets/check.png" alt="">PAYROLL
+                      MANGMENT</li>
+                    <li><img src="./assets/check.png" alt="">CLRA LICENCE</li>
+                    <li><img src="./assets/check.png" alt="">STATUTORY
+                      COMPLIANCE
+                      SERVICES</li>
+                    <li><img src="./assets/check.png" alt="">ACCOUNTS
+                      SECVICES</li>
+                </ul>
+            </div>
+        </div>
+        <div class="first">
+            <div class="content">
+                <ul>
+                    <li><img src="./assets/check.png" alt="">GST RETURNS /
+                      REGITRATION</li>
+                    <li><img src="./assets/check.png" alt="">CLRA AUDIT</li>
+                    <li><img src="./assets/check.png" alt="">ESIC AND EPF</li>
+                    <li><img src="./assets/check.png" alt="">CLRA
+                      CONSULTANCY
+                      SERVICES</li>
+                    <li><img src="./assets/check.png" alt="">S&D CONSULTA
+                      NCY SERVICES</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </section>
+</div>
+
 <!-- -----------------------OUR TEAM--------------------- -->
 
 <section id="team" class="team-section">
@@ -255,6 +337,43 @@
     </div>
   </div>
 </section>
+
+<div class="team-pop-up">
+  <section id="team" class="team-section">
+    <img class="team-close" src="./assets/close.png" alt="" />
+    <h1 class="team-heading" style="margin-bottom: 20px;">Our Team</h1>
+    <div class="team">
+      <div class="team-box d-flex">
+        <div class="team-box-img">
+          <img src="./assets/team-pic1.jpg" alt="">
+        </div>
+        <div class="team-box-content">
+          <h1>Experienced Professionals</h1>
+          <div class="feature-line"></div>
+          <p>Our team
+            comprises compliance experts,
+            software developers, and consultants
+            dedicated to delivering top-notch
+            solutions and services.</p>
+        </div>
+      </div>
+      <div class="team-box d-flex" style="flex-direction: row-reverse;">
+        <div class="team-box-img">
+          <img src="./assets/team-pic2.jpg" alt="">
+        </div>
+        <div class="team-box-content">
+          <h1>Commitment to Excellence</h1>
+          <div class="feature-line"></div>
+          <p>We are
+            committed to staying abreast of
+            regulatory changes and technological
+            advancements to continually enhance
+            our offerings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 
 <div class="banner">
   <h2>Your Partner in Payroll and Compliance Excellence</h2>
@@ -371,6 +490,7 @@
 <footer id="picassoFooter">
   <div class="footer-navigation">
       <h3>Quick Links</h3>
+      <div class="footer-line"></div>
       <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>
@@ -380,12 +500,11 @@
   </div>
   <div class="footer-contact">
       <h3>Contact Us</h3>
-      <p>Email: info@complymax.co.in</p>
-      <p>Phone: 01145642185</p>
-      <p>Address:  GF- 318 Pocket-A Lok Nayak Puram Bakkar Wala 110041</p>
-  </div>
-  <div class="footer-social">
-      <h3>Follow Us</h3>
+      <div class="footer-line"></div>
+      <p><span style="font-weight: 500;">Email:</span> info@complymax.co.in</p>
+      <p><span style="font-weight: 500;">Phone:</span> 01145642185</p>
+      <p><span style="font-weight: 500;">Address:</span>  GF- 318 Pocket-A Lok Nayak Puram Bakkar Wala 110041</p>
+      <p style="margin-top: 15px; margin-bottom: 5px; font-weight: 500;">Follow Us:</p>
       <div class="social-icons">
           <a href="https://www.facebook.com/uridetour" target="_blank" class="social-icon"><img src="./assets//facebook.png" alt="" /></a>
           <a href="https://twitter.com/uridetour" target="_blank" class="social-icon"><img src="./assets//twitter.png" alt="" /></a>
@@ -395,7 +514,8 @@
         </div>
   </div>
   <div class="footer-art">
-      <img src="./full-logo.png" alt="">
+      <img src="./logo-full.png" alt="">
+      <p style="margin-top: 10px;">ComplyMax Management Pvt. Ltd. is a leading provider of Payroll & compliance management , Manpower solutions catering to a diverse range of industries</p>
   </div>
 </footer>
 
@@ -403,10 +523,52 @@
   <p>Copyright © 2024 ComplyMaxManagement Pvt. Ltd. rights reserved</p>
 </div>
 
+<section class="enquiry-section">
+  <div class="enquiry-form">
+    <img class="enquiry-close" src="./assets/close.png" alt="">
+    <h2>Business Enquiry Form</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, nemo?</p>
+    <form action="#">
+      <div class="input-box">
+        <div class="input-div">
+          <label class="form-label" for="name">Name</label>
+          <input required type="text" name="name" id="name" placeholder="Full Name" autocomplete="off"/>
+        </div>
+        <div class="input-div">
+          <label class="form-label" for="email">Email</label>
+          <input required type="email" name="email" id="email" placeholder="Email" autocomplete="off"/>
+        </div>
+      </div>
+      <div class="input-box">
+        <div class="input-div">
+          <label class="form-label" for="contact_no">Contact No.</label>
+          <input required type="number" name="contact_no" id="contact_no" placeholder="Contact No." autocomplete="off"/>
+        </div>
+        <div class="input-div">
+          <label class="form-label" for="city">Location/City/State</label>
+          <input required type="text" name="city" id="city" placeholder="City" autocomplete="off"/>
+        </div>  
+      </div>
+      <div class="input-div">
+        <label class="form-label" for="email">Message</label>
+        <textarea required type="text" name="message" id="message" placeholder="Message" autocomplete="off"></textarea>
+      </div>
+      <button class="enquiry-button" type="submit">Send</button>    
+    </form>
+  </div>
+</section>
+
+<div class="enquiry-link">
+  <a class="enquiry-click" href="#">
+    <h3>ENQUIRE NOW</h3>
+  </a>
+</div>
+
 
             
 
-
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
